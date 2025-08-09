@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+select = ["E", "F", "I"]  # E/F: errors; I: import order/cleanup
+fix = true
+
+[tool.ruff.lint.isort]
+known-first-party = ["python_playground"]
+profile = "black"
